@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+    Ma Library
+{% endblock %}
+
+{% block body %}
+{% if app.user %}
+    <h1 class="text-center mt-4"style="text-align:center">Bienvenu {{app.user.firstname}}</h1>
+{% else %}
+    <h1 class="text-center mt-4"style="text-align:center">Bienvenu</h1>
+{% endif %}
+    
+{% endblock %}

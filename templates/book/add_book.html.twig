@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block title %}Add Book{% endblock %}
+{% block body %}
+
+<h1 class="text-center mt-4"> Ajouter un livre </h1>
+
+<div class="container mt-4">
+{{form_start(bookForm)}}
+
+    {{form_row(bookForm.title,{attr:{'placeholder':'Nom du titre'},'label':'Nom du titre'})}}
+    {{form_row(bookForm.author,{attr:{"placeholder":"Nom de l'auteur"},"label":"Nom de l'auteur"})}}
+    {{form_row(bookForm.description,{attr:{'placeholder':'Description du livre'},'label':'Description du livre'})}}
+    {{form_row(bookForm.nbBooks,{attr:{"placeholder":"Nombre d'exemplaire"},"label":"Nombre d'exemplaire"})}}
+    {{form_row(bookForm.nbBorrowedBooks,{attr:{"placeholder":"Nombre d'exemplaire "},"label":"Nombre d'exemplaire"})}}
+
+    <button type="submit" class="btn btn-success">Enregistrer</button>
+{{form_end(bookForm)}}
+</div>
+{% endblock %}
+

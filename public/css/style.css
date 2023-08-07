@@ -1,0 +1,15 @@
+
+button{
+    margin:20px;
+}
+input, select, textarea{
+    margin: 10px;
+}
+
+form{
+    border-radius: 20px;
+    padding:20px;
+    border:solid rgb(76, 183, 113) 2px;
+    display: flex;
+
+}

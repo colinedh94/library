@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+	<h1 class="text-center">Erreur de l'application
+	</h1>
+	<div class="container">
+
+		{% for message in app.flashes('error') %}
+			<div>
+				{{message}}
+			</div>
+		{% endfor %}
+	</div>
+
+
+{% endblock %}
+
